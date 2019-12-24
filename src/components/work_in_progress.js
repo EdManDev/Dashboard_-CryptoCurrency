@@ -5,6 +5,9 @@ class work_in_progress extends Component {
     return (
       <div>
         <h1>it an work in progress</h1>
+        <h1>it an work in progress</h1>
+        <h1>it an work in progress</h1>
+        <h1>it an work in progress</h1>
       </div>
     );
   }
