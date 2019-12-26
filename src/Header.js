@@ -7,10 +7,10 @@ class Header extends Component {
     return (
       <div>
         <header>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
           <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
             <li>
               <Link to="/first">First</Link>
             </li>
