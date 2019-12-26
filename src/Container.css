@@ -1,15 +1,43 @@
 .fade-enter {
-  opacity: 0.05;
+  opacity: 0.09;
 }
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 800ms ease-in;
+  transition: 900ms ease-in;
 }
+
 .fade-exit {
   opacity: 0.5;
 }
 
 .fade-exit.fade-exit-active {
   opacity: 0.01;
-  transition: opacity 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+/* .slideUp {
+  -webkit-animation-name: slideUp;
+  animation-name: slideUp;
+} */
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: translateY(-100%);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform-origin: 0 0;
+    transform: translateY(0%);
+  }
+  100% {
+    transform-origin: 0 0;
+    transform: translateY(-100%);
+  }
 }

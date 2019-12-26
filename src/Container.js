@@ -15,19 +15,21 @@ function Container({ location }) {
   return (
     <div>
       <Header />
-      <div className="Wrapper" style={{ margin: "50px" }}>
+      <div className="Wrapper">
         <TransitionGroup>
           <CSSTransition
             key={location.key}
-            timeout={{ enter: 900, exit: 900 }}
+            timeout={{ enter: 900, exit: 901 }}
             classNames="fade"
           >
-            <Switch location={location}>
-              <Route exact path="/" component={Home} />
-              <Route path="/first" component={First} />
-              <Route path="/second" component={Second} />
-              <Route path="/third" component={Third} />
-            </Switch>
+            <div style={{ margin: "50px" }}>
+              <Switch location={location}>
+                <Route exact path="/" component={Home} />
+                <Route path="/first" component={First} />
+                <Route path="/second" component={Second} />
+                <Route path="/third" component={Third} />
+              </Switch>
+            </div>
           </CSSTransition>
         </TransitionGroup>
       </div>
