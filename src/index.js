@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Container from "./Container";
+import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 ReactDOM.render(
   <Router>
     <Route>
-      <Container />
+      <App />
     </Route>
   </Router>,
   document.getElementById("root")
